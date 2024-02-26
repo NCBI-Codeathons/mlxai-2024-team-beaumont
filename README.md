@@ -1,8 +1,11 @@
 # Team Project Name
 
 List of participants and affiliations:
-- Participant, Affiliation (Team Leader)
-- Participant, Affiliation
+- David Beaumont, RTI International (Team Lead)
+- Nathan Braswell, RTI International
+- Stephen Hwang, RTI International
+- Corey Cox, University of Colorado
+- Oswaldo Lazoya, RTI International
 
 ## Project Goals
 
