@@ -8,6 +8,8 @@ List of participants and affiliations:
 
 ## Approach
 
+This is a RAG system using multiple LLM models and a Vector DB
+
 ## Results
 
 ## Future Work
