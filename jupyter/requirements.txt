@@ -1,0 +1,10 @@
+pinecone-client==3.0.0
+langchain==0.1.1 # Should move to langchain-openai
+langchain-community==0.0.13
+datasets==2.14.6
+openai==1.6.1 # Should move to langchain-openai
+tiktoken==0.5.2
+numpy
+pandas
+matplotlib
+# langchain-openai

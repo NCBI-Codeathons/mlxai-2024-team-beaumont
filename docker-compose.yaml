@@ -1,0 +1,11 @@
+version: '3'
+services:
+  jupyter:
+    build: ./jupyter
+    volumes:
+      - ./jupyter/notebooks:/home/jovyan/work
+    env_file:
+      - .env
+    ports:
+      - "8888:8888"
+    command: "start-notebook.sh --NotebookApp.token="
