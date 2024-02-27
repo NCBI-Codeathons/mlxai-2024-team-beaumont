@@ -3,6 +3,7 @@
 List of participants and affiliations:
 - Participant, Affiliation (Team Leader)
 - Participant, Affiliation
+- Corey Cox, University of Colorado | Anschutz Medical Campus (Tech Lead)
 
 ## Project Goals
 
