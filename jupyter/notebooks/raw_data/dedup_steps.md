@@ -37,3 +37,16 @@
 ^\D\d+\.
 ^\D\d+ \- 
 ^\D\d+\s+\-
+
+
+return to mg2.5 --> 2.5 GM
+mg5.0 --> 5.0 GM
+mg10 --> 10.0 GM
+dim3 3d
+HOUR48 48 HOUR
+# final
+^\D\d+?(\D){0,3}\.
+^\d+?\.(\d+){0,3} 
+
+
+^[:alpha:]\d+?[:alpha:]+?
