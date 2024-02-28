@@ -1,0 +1,16 @@
+user_variable,user_description,uid,relevance_score
+CONSENT,Consent group as determined by DAC,52783.0,0.45456296
+CONSENT,Consent group as determined by DAC,52786.0,0.12474515
+CONSENT,Consent group as determined by DAC,52785.0,0.06644793
+SUBJECT_SOURCE,Source repository where subjects originate,216548.0,0.084341794
+SUBJECT_SOURCE,Source repository where subjects originate,216503.0,0.077099696
+SUBJECT_SOURCE,Source repository where subjects originate,226461.0,0.061875984
+SOURCE_SUBJECT_ID,Subject ID used in the Source Repository,226592.0,0.54912686
+SOURCE_SUBJECT_ID,Subject ID used in the Source Repository,226431.0,0.45051047
+SOURCE_SUBJECT_ID,Subject ID used in the Source Repository,242989.0,0.208018
+AFFECTION_STATUS,Affection status,16208.0,0.858244
+AFFECTION_STATUS,Affection status,16209.0,0.2666436
+AFFECTION_STATUS,Affection status,31118.0,0.20118472
+SAMPLE_SOURCE,Source repository where samples originate,107521.0,0.3572311
+SAMPLE_SOURCE,Source repository where samples originate,216503.0,0.26340988
+SAMPLE_SOURCE,Source repository where samples originate,216548.0,0.20769641
