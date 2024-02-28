@@ -11,7 +11,7 @@ For the selected variable, provide the user with as much information as you can 
 When there is no obvious match provide additional context for why you can't make a determination.
 
 Existing Variables:
-
+{contexts}
 
 New Variables:
-
+{query}
