@@ -1,9 +1,11 @@
 # Team Project Name
 
 List of participants and affiliations:
-- Participant, Affiliation (Team Leader)
-- Participant, Affiliation
-- Corey Cox, University of Colorado | Anschutz Medical Campus (Tech Lead)
+- (Team Leader) David Beaumont, RTI 
+- Nathaniel Braswell, RTI
+- (Tech Lead) Corey Cox, University of Colorado | Anschutz Medical Campus | TISLab
+- Stephen Hwang, RTI
+- Oswaldo Alonso Lozoya,  
 
 ## Project Goals
 
