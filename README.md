@@ -1,12 +1,17 @@
 # Team Project Name
 
 List of participants and affiliations:
-- Participant, Affiliation (Team Leader)
-- Participant, Affiliation
+- (Team Leader) David Beaumont, RTI 
+- Nathaniel Braswell, RTI
+- (Tech Lead) Corey Cox, University of Colorado | Anschutz Medical Campus | TISLab
+- Stephen Hwang, RTI
+- Oswaldo Alonso Lozoya,  
 
 ## Project Goals
 
 ## Approach
+
+This is a RAG system using multiple LLM models and a Vector DB
 
 ## Results
 

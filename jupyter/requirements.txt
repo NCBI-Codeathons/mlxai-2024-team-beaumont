@@ -7,4 +7,5 @@ tiktoken==0.5.2
 numpy
 pandas
 matplotlib
-# langchain-openai
+langchain-openai
+cohere
