@@ -13,6 +13,9 @@ The goal of projectname is to build a system for harmonizing your data with the 
 ## Approach
 This is a RAG system using multiple LLM models and a Vector DB
 
+![image](https://github.com/NCBI-Codeathons/mlxai-2024-team-beaumont/assets/153935407/37b62e40-3978-49f4-90f3-3472dd2a6223)
+
+
 ## Results
 
 ## Future Work
