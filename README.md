@@ -8,7 +8,7 @@ List of participants and affiliations:
 - Oswaldo Alonso Lozoya, RTI International | SSES | Center for Data Modernization
 
 ## Project Goals
-The goal of dataragtag is to build a system for harmonizing incoming data with the data that already exsists within a data repository. Harmonization is a major challenge for all research repositories as data sources largely do not have either the clear guidance and/or resources to align data before ingest. This results in restrospective data harmonization that must done by the data users or through manual harmonization efforts. The dataragtaq system evaluates the potential for retrieval augmented generation to provide an evaulation mechnaisms for determining how new data provided through a data dictionary aligns with the corpus of data availabile within a repository. 
+The goal of projectname is to build a system for harmonizing your data with the data that already exists within a data repository such as NCBI or NHLBI BDC. Harmonization is a major challenge for all research repositories as data sources do not have either the clear direction and/or the resources to align data before ingest. This results in retrospective data harmonization that must done by the data users or through manual harmonization efforts by the repository teams. The projectname system evaluates the potential for retrieval augmented generation and AI reasoning to provide an evaluation mechanisms for determining how new data provided through a data dictionary as an input aligns with the corpus of data available within a repository.
 
 ## Approach
 This is a RAG system using multiple LLM models and a Vector DB
