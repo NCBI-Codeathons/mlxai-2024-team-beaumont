@@ -20,7 +20,7 @@ SELECTED: EXISTING VARIABLE NAME
 ALIGNMENT: INFORMATION ON HOW TO ALIGN
 
 Existing Variables:
-{conext}
+{contexts}
 
 New Variables:
 {query}

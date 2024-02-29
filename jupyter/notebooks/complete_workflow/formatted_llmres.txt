@@ -1,0 +1,125 @@
+Submitted Variable: submitter_id
+Prompt: A project-specific identifier for a node. This property is the calling card/nickname/alias for a unit of submission. It can be used in place of the UUID for identifying or recalling a node.
+Response: 1. UNIQUE COMMUNITY IDENTIFIER - This variable is used to uniquely identify different communities within the dataset. It may not be directly relevant to the new variable as it focuses on community-level identification rather than individual node identification.
+
+2. UNIQUE SUBJECT ID - This variable is used to uniquely identify individual subjects within the dataset. While it is more relevant than the community identifier, it still may not be the best fit for harmonizing the new variable as it is specific to subjects rather than nodes.
+
+3. UNIQUE SUBJECT IDENTIFIER - This variable is also used to uniquely identify individual subjects within the dataset. Similar to the unique subject ID, it may not be the best fit for harmonizing the new variable as it is focused on subject identification rather than node identification.
+
+SELECTED: UNIQUE SUBJECT ID
+ALIGNMENT: To align the new variable with the selected existing variable (UNIQUE SUBJECT ID), you can assign a unique subject ID to each node in the dataset. This will allow for consistent identification and tracking of individual nodes, similar to how subjects are identified in the dataset. This alignment will help maintain data integrity and organization within the repository.
+
+--------------------------------------------------
+
+Submitted Variable: participant_id
+Prompt: Unique identifier that can be used to retrieve more information for a participant.
+Response: Existing Variables:
+1. PARTICIPANT IDENTIFICATION - This variable is used to uniquely identify each participant in the dataset.
+2. PARTICIPANT ID - Another variable used to identify participants in the dataset.
+3. PARTICIPANT ID NUMBER - Similar to the other participant identification variables, this variable serves to uniquely identify participants.
+
+SELECTED: PARTICIPANT ID
+ALIGNMENT: To align the new variable with the selected existing variable "PARTICIPANT ID," ensure that the unique identifier for each participant in the new data aligns with the format and structure of the existing "PARTICIPANT ID" variable. This will help maintain consistency and facilitate data integration and analysis across the repository.
+
+--------------------------------------------------
+
+Submitted Variable: consent_codes
+Prompt: Data Use Restrictions that are used to indicate permissions/restrictions for datasets and/or materials, and relates to the purposes for which datasets and/or material might be removed, stored or used.Based on the Data Use Ontology : see http://www.obofoundry.org/ontology/duo.htmlGRU - For general research use for any research purpose. Example of usage: This includes but is not limited to: health/medical/biomedical purposes, fundamental biology research, the study of population origins or ancestry, statistical methods and algorithms development, and social-sciences research.HMB - Use of the data is limited to health/medical/biomedical purposes; does not include the study of population origins or ancestry.DS-X - Use of the data must be related to [disease].NPU - Use of the data is limited to not-for-profit organizations and not-for-profit use, non-commercial use.IRB - Requestor must provide documentation of local IRB/REC approval.
+Response: 1. PERMISSION FOR NON-PROFIT USE OF DATA - This existing variable indicates permission for non-profit use of data, which aligns with the concept of NPU (Use of the data is limited to not-for-profit organizations and not-for-profit use, non-commercial use) in the new variable.
+
+2. ANY PERMISSION FOR USE - NON-GENETIC DATA - This existing variable is a general permission for use of non-genetic data, which may not directly align with the specific restrictions and permissions outlined in the new variable.
+
+3. PERMISSION FOR FOR-PROFIT USE OF DATA - This existing variable indicates permission for for-profit use of data, which is not in alignment with the NPU (Use of the data is limited to not-for-profit organizations and not-for-profit use, non-commercial use) concept in the new variable.
+
+SELECTED: PERMISSION FOR NON-PROFIT USE OF DATA
+ALIGNMENT: To align the new variable with the selected existing variable, ensure that the data use restrictions for the dataset or materials are limited to not-for-profit organizations and non-commercial use. This aligns with the concept of NPU in the existing variable. Additionally, documentation of local IRB/REC approval may be required as indicated in the new variable.
+
+--------------------------------------------------
+
+Submitted Variable: amputation_type
+Prompt: If amputated, the amputation type for leg, above the knee or below the knee.  
+Response: Existing Variables:
+1. AMPUTATION OF LOWER EXTREMITY - This variable captures the presence or absence of any lower extremity amputation, but does not specify the exact location of the amputation.
+2. AMPUTATION - This variable captures the presence or absence of any type of amputation, including lower extremity amputations.
+3. LOWER EXTREMITY AMPUTATION (TOE, FOREFOOT, HEEL, BELOW THE KNEE) - This variable specifies the specific location of the lower extremity amputation, including toe, forefoot, heel, and below the knee.
+
+SELECTED: LOWER EXTREMITY AMPUTATION (TOE, FOREFOOT, HEEL, BELOW THE KNEE)
+ALIGNMENT: To align the new variable "If amputated, the amputation type for leg, above the knee or below the knee" with the selected existing variable "LOWER EXTREMITY AMPUTATION (TOE, FOREFOOT, HEEL, BELOW THE KNEE)", you can create a mapping or crosswalk between the specific amputation types mentioned in the new variable (above the knee or below the knee) with the corresponding categories in the existing variable. This will ensure that the new variable aligns accurately with the existing variable in the data repository.
+
+--------------------------------------------------
+
+Submitted Variable: cohort_id
+Prompt: The study subgroup that the participant belongs to. This indicates whether the participant was a postmortem donor, an organ donor, or a surgical donor.  
+Response: 1. DONOR BLOOD GROUP - This existing variable is relevant as it also pertains to information about the donor, specifically their blood group. It can provide insights into the health status and compatibility of the donor.
+
+2. DERIVED DUPLICATE DONOR RECIPIENT (BASED ON DONOR'S STUDY ARM AND RECIPIENT) - This existing variable is related to the relationship between the donor and recipient, which may not directly align with the new variable describing the study subgroup of the participant.
+
+3. SUBJECT RECEIVED A STUDY TRANSPLANT (0=NO, 1=YES) - This existing variable indicates whether the subject received a study transplant, which is not directly related to the new variable describing the study subgroup of the participant.
+
+SELECTED: DONOR BLOOD GROUP
+ALIGNMENT: To align the new variable "The study subgroup that the participant belongs to" with the existing variable "DONOR BLOOD GROUP," you can consider categorizing the study subgroups based on the blood group of the participants. This alignment can provide a clear and relevant connection between the two variables, allowing for better harmonization within the data repository.
+
+--------------------------------------------------
+
+Submitted Variable: data_submission_guid
+Prompt: A Globally Unique IDentifier (GUID) provided by the data submitter, used to identify this subject across multiple projects, commons, etc.
+Response: 1. UNIQUE SUBJECT IDENTIFIER - This variable is used to uniquely identify each subject in the dataset. It serves as a primary key for linking different data points related to the same subject.
+
+2. UNIQUE SUBJECT ID - Similar to the UNIQUE SUBJECT IDENTIFIER, this variable is also used to uniquely identify each subject in the dataset. It may serve as an alternative primary key for subject identification.
+
+3. PUBLIC SUBJECT ID - This variable may be used to identify subjects in a public-facing context, such as in publications or public datasets. It could be linked to the subject's identity while maintaining privacy.
+
+SELECTED: UNIQUE SUBJECT IDENTIFIER
+ALIGNMENT: To align the new variable with the existing UNIQUE SUBJECT IDENTIFIER, ensure that the GUID provided by the data submitter is unique for each subject and can serve as a primary key for subject identification in the dataset. Make sure to map the GUID to the UNIQUE SUBJECT IDENTIFIER in the data repository for harmonization.
+
+--------------------------------------------------
+
+Submitted Variable: derived_parent_subject_id
+Prompt: Unique subject identifier associated with parent project; derived from parent accession and submitted subject ID.
+Response: 1. UNIQUE SUBJECT IDENTIFIER - This variable is likely a unique identifier assigned to each subject in the repository. It is used to track and link data related to a specific individual.
+
+2. UNIQUE SUBJECT ID - This variable is also likely a unique identifier assigned to each subject in the repository. It may serve a similar purpose as the unique subject identifier in tracking and linking data.
+
+3. SUBJECT ID - This variable is another identifier assigned to subjects in the repository. It may be used for tracking and linking data as well.
+
+SELECTED: UNIQUE SUBJECT IDENTIFIER
+ALIGNMENT: To align the new variable with the selected existing variable, ensure that the unique subject identifier associated with the parent project is formatted and structured in a consistent manner with the existing unique subject identifier. This may involve using the same naming conventions, data type, and length to maintain compatibility and harmonization within the repository. Additionally, cross-reference the new variable with the existing unique subject identifier to establish a clear link between the two for data integration and analysis purposes.
+
+--------------------------------------------------
+
+Submitted Variable: derived_topmed_subject_id
+Prompt: Unique subject identifier associated with TOPMed project; derived from TOPMed accession and submitted subject ID.
+Response: Existing Variables:
+1. TOPMED ACCESSION NUMBER - This variable represents the unique accession number assigned to each subject in the TOPMed project.
+2. SUBJECT ID - This variable represents the unique identifier assigned to each subject in the dataset.
+3. TOPMED PROJECT ID - This variable represents the unique identifier for the TOPMed project.
+
+SELECTED: SUBJECT ID
+ALIGNMENT: To align the new variable with the existing variable "SUBJECT ID", you can map the unique subject identifier associated with the TOPMed project to the existing subject ID in the dataset. This will ensure consistency and harmonization of the data across different variables.
+
+--------------------------------------------------
+
+Submitted Variable: eligibility
+Prompt: A verification field of whether the Donor has met the overall eligibility criteria for GTEx collection based on answers to eligibility questions. All Eligibility conditions require confirmation from the donor procurement team (staff team where tissue collection and data abstraction takes place) and must be met in order for donor to eligible.  
+Response: Existing Variables:
+1. ELIGIBILITY VERIFICATION - This variable likely captures whether a donor meets certain eligibility criteria for a specific purpose or study.
+2. DONOR MEETS INCL CRITERIA - This variable indicates whether a donor meets the inclusion criteria for a particular study or collection.
+3. GD01: D3. DOES DONOR MEET STANDARD BLOOD CENTER CRITERIA - This variable specifically focuses on whether a donor meets the standard criteria set by a blood center.
+
+SELECTED: ELIGIBILITY VERIFICATION
+ALIGNMENT: To align the new variable with the existing variable "ELIGIBILITY VERIFICATION," ensure that the verification field captures all necessary eligibility criteria for the GTEx collection. Confirm that all eligibility conditions are met and verified by the donor procurement team before considering the donor eligible for the collection. This alignment will help maintain consistency and harmonization with existing data variables in the repository.
+
+--------------------------------------------------
+
+Submitted Variable: geographic_site
+Prompt: "Site where the subject was recruted. ARIC_A=field center A representing one of four anonymized centers (Forsyth County, NC, USA; Jackson, MS, USA; the northwest suburbs of Minneapolis, MN, USA; and Washington County, MD, USA) where baseline exam was conducted for ARIC (Atherosclerosis Risk in Communities), ARIC_B=field center B representing one of four anonymized centers (Forsyth County, NC, USA; Jackson, MS, USA; the northwest suburbs of Minneapolis, MN, USA; and Washington County, MD, USA) where baseline exam was conducted for ARIC (Atherosclerosis Risk in Communities), ARIC_C=field center C representing one of four anonymized centers (Forsyth County, NC, USA; Jackson, MS, USA; the northwest suburbs of Minneapolis, MN, USA; and Washington County, MD, USA) where baseline exam was conducted for ARIC (Atherosclerosis Risk in Communities), ARIC_D=field center D representing one of four anonymized centers (Forsyth County, NC, USA; Jackson, MS, USA; the northwest suburbs of Minneapolis, MN, USA; and Washington County, MD, USA) where baseline exam was conducted for ARIC (Atherosclerosis Risk in Communities), CARDIA_1=field center 1 representing one of four anonymized field centers (University of Alabama, Birmingham, AL, USA; Northwestern University, IL, USA; University of Minnesota, MN, USA; Kaiser Foundation Research Institute, Oakland, CA, USA) for subjects in the CARE project within CARDIA (Coronary Artery Risk Development in Young Adults), CARDIA_2=field center 2 representing one of four anonymized field centers (University of Alabama, Birmingham, AL, USA; Northwestern University, IL, USA; University of Minnesota, MN, USA; Kaiser Foundation Research Institute, Oakland, CA, USA) for subjects in the CARE project within CARDIA (Coronary Artery Risk Development in Young Adults), CARDIA_3=field center 3 representing one of four anonymized field centers (University of Alabama, Birmingham, AL, USA; Northwestern University, IL, USA; University of Minnesota, MN, USA; Kaiser Foundation Research Institute, Oakland, CA, USA) for subjects in the CARE project within CARDIA (Coronary Artery Risk Development in Young Adults), CARDIA_4=field center 4 representing one of four anonymized field centers (University of Alabama, Birmingham, AL, USA; Northwestern University, IL, USA; University of Minnesota, MN, USA; Kaiser Foundation Research Institute, Oakland, CA, USA) for subjects in the CARE project within CARDIA (Coronary Artery Risk Development in Young Adults), CHS_BOWMAN.GRAY=clinic at Bowman Gray University (Forsyth County, NC, USA) for CHS (Cardiovascular Health Study), CHS_DAVIS=clinic at Davis University (Sacramento County, CA, USA) for CHS (Cardiovascular Health Study), CHS_HOPKINS=clinic at Johns Hopkins University (Washington County, MD, USA) for CHS (Cardiovascular Health Study), CHS_PITT=clinic at University of Pittsburgh (Pittsburgh, PA, USA) for CHS (Cardiovascular Health Study), COPDGene_C01=clinical center C01 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), COPDGene_C02=clinical center C02 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), COPDGene_C03=clinical center C03 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), COPDGene_C04=clinical center C04 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), COPDGene_C05=clinical center C05 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), COPDGene_C06=clinical center C06 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), COPDGene_C07=clinical center C07 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), COPDGene_C08=clinical center C08 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), COPDGene_C09=clinical center C09 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), COPDGene_C10=clinical center C10 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), COPDGene_C11=clinical center C11 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), COPDGene_C12=clinical center C12 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), COPDGene_C13=clinical center C13 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), COPDGene_C14=clinical center C14 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), COPDGene_C15=clinical center C15 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), COPDGene_C16=clinical center C16 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), COPDGene_C17=clinical center C17 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), COPDGene_C18=clinical center C18 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), COPDGene_C19=clinical center C19 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), COPDGene_C20=clinical center C20 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), COPDGene_C21=clinical center C21 representing one of 21 de-identified clinical centers for COPDGene (Genetic Epidemiology of COPD), GENOA_MN=recruitment from Rochester, MN, US, GENOA_MS=recruitment from Jackson, MS, US, GOLDN_MN=recruitment center at Minneapolis, MN, USA for GOLDN (Genetics of Lipid Lowering Drugs and Diet Network Lipodemics Study), GOLDN_UT=recruitment center at Salt Lake City, UT, USA for GOLDN (Genetics of Lipid Lowering Drugs and Diet Network Lipodemics Study), HCHS_SOL_Bronx=recruitment center Bronx, NY, USA for HCHS/SOL (Hispanic Community Health Study/Study of Latinos), HCHS_SOL_Chicago=recruitment center Chicago, IL, USA for HCHS/SOL (Hispanic Community Health Study/Study of Latinos), HCHS_SOL_Miami=recruitment center Miami, FL, USA for HCHS/SOL (Hispanic Community Health Study/Study of Latinos), HCHS_SOL_SanDiego=recruitment center San Diego, CA, USA for HCHS/SOL (Hispanic Community Health Study/Study of Latinos), JHS_Hinds=recruitment from urban and rural areas of Hinds county, MS, USA for JHS (Jackson Heart Study), JHS_Madison=recruitment from urban and rural areas of Madison county, MS, USA for JHS (Jackson Heart Study), JHS_Rankin=recruitment from urban and rural areas of Rankin county, MS, USA for JHS (Jackson Heart Study), JHS_Unknown=recruitment from unknown county in MS, USA for JHS (Jackson Heart Study), Mayo_VTE_Midwest_US=state of residence (at time of enrollment for Mayo_VTE study) is in the South region of the USA as defined by the Census Bureau, Mayo_VTE_Northeast_US=state of residence (at time of enrollment for Mayo_VTE study) is in the Northeast region of the USA as defined by the Census Bureau, Mayo_VTE_non_US=state of residence (at time of enrollment for Mayo_VTE study) is from a country outside the USA, Mayo_VTE_South_US=state of residence (at time of enrollment for Mayo_VTE study) is in the Midwest region of the USA as defined by the Census Bureau, Mayo_VTE_West_US=state of residence (at time of enrollment for Mayo_VTE study) is in the West region of the USA as defined by the Census Bureau, MESA_COL=field center/baseline clinic at Columbia University, NY, USA for MESA (Multi-Ethnic Study of Atherosclerosis Cohort), MESA_JHU=field center/baseline clinic at Johns Hopkins University, MD, USA for MESA (Multi-Ethnic Study of Atherosclerosis Cohort), MESA_NWU=field center/baseline clinic at Northwestern University, IL, USA for MESA (Multi-Ethnic Study of Atherosclerosis Cohort), MESA_UCLA=field center/baseline clinic at University of California, Los Angeles, CA, USA for MESA (Multi-Ethnic Study of Atherosclerosis Cohort), MESA_UMN=field center/baseline clinic at University of Minnesota, MN, USA for MESA (Multi-Ethnic Study of Atherosclerosis Cohort), MESA_WFU=field center/baseline clinic at Wake Forest University, NC, USA for MESA (Multi-Ethnic Study of Atherosclerosis Cohort), SAS_Apia.urban=recruitment census region of Apia Urban Area in Samoa for SAS (Genome-wide Association Study of Adiposity in Samoans), SAS_NW.Upola=recruitment census region of Northwest Upola in Samoa for SAS (Genome-wide Association Study of Adiposity in Samoans), SAS_rest.Upola=recruitment census region including rest of Upola in Samoa for SAS (Genome-wide Association Study of Adiposity in Samoans), SAS_Savaii=recruitment census region of Savaii in Samoa for SAS (Genome-wide Association Study of Adiposity in Samoans), WHI_Midwest=recruitment from Midwest region of the USA for WHI (Womens Health Initiative), WHI_Northeast=recruitment from Northeast region of the USA for WHI (Womens Health Initiative), WHI_South=recruitment from South region of the USA for WHI (Womens Health Initiative), WHI_West=recruitment from West region of the USA for WHI (Womens Health Initiative)" (HARMONIZED)
+Response: Existing Variables:
+1. ARIC SURVEILLANCE EVENT ID (CIR) - This variable identifies the unique event ID associated with the ARIC surveillance.
+2. FRAMINGHAM HEART STUDY PARTICIPANT COHORT IDENTIFIER - This variable identifies the cohort to which the participant belongs in the Framingham Heart Study.
+3. IS PATIENT ADDRESS IN ARIC COMMUNITY SURVEILLANCE CATCHMENT AREA? Q5B - This variable indicates whether the patient's address is within the ARIC community surveillance catchment area.
+
+Selected: ARIC SURVEILLANCE EVENT ID (CIR)
+Alignment: To align the new variable "Site where the subject was recruited" with the existing variable "ARIC SURVEILLANCE EVENT ID (CIR)", you can use the event ID associated with the recruitment site. This will help in linking the recruitment site information with the specific event ID in the ARIC surveillance data.
+
+--------------------------------------------------
+
