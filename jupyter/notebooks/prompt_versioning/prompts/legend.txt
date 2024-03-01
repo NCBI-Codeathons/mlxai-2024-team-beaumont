@@ -1,0 +1,3 @@
+2028-02-28_a01.txt: Original prompt unstructured.
+2028-02-28_a02.txt: Original prompt with in-line format structure.
+2028-02-28_a03.txt: Original prompt with template instructions format structure.
