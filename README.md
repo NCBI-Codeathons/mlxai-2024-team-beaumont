@@ -1,4 +1,4 @@
-# Team Project Name
+# RAGVar MLXAI Codeathon Team
 
 List of participants and affiliations:
 - (Team Leader) David Beaumont, RTI International | SSES | Center for Data Modernization Solutions
@@ -8,16 +8,16 @@ List of participants and affiliations:
 - Oswaldo Alonso Lozoya, RTI International | SSES | Center for Data Modernization Solutions
 
 ## Project Goals
-The goal of RAGVar is to build a system for harmonizing your data with the data that already exists within a data repository such as NCBI or NHLBI BDC. Harmonization is a major challenge for all research repositories as data sources do not have either the clear direction and/or the resources to align data before ingest. This results in retrospective data harmonization that must be done by the data users or through manual harmonization efforts by the repository teams. The RAGVar system evaluates the potential for retrieval augmented generation and AI reasoning to provide an evaluation mechanism for determining how new data provided through a data dictionary as an input aligns with the corpus of data available within a repository.
+The goal of RAGVar is to build a system for harmonizing your data with the data that already exists within a data repository such as NCBI or NHLBI BDC. Harmonization is a major challenge for all research repositories as data sources do not have either the clear direction and/or the resources to align data before ingest. This results in retrospective data harmonization that must be done by the data users or through manual harmonization efforts by the repository teams. The RAGVar system evaluates the potential for retrieval augmented generation and AI reasoning to provide an evaluation mechanism for determining how new data, provided in a data dictionary, aligns with the data existing within a repository.
 
 RAGVar focuses on the initial step of aligning user provided variables, in the form of a data dictionary with descriptive variable labels, with the existing variables in the corpus of data which a user may want to align with. After identifying prospective similar variables, RAGVar ranks which variable is most likely to be a match for each of the new variables and attempts to provide information to the user about how to harmonize their variables with the existing data sets.
 
 ## Approach
 The following outlines our approach and methods for project name
-**Workflow:**
+### Workflow
 ![image](https://github.com/NCBI-Codeathons/mlxai-2024-team-beaumont/assets/153935407/37b62e40-3978-49f4-90f3-3472dd2a6223)
 
-**Methods**
+### Methods
 Publically available data from BioLINCC studies were scraped to collect machine readable data dictionaries for the studies. The raw data was given a unique identifier (UID) to preserve attributes, such as source study and variable name, in a lookup table.
 
 Descriptive variable labels were cleaned using regex expressions to strip out artifacts, i.e. ‘1.‘ or ‘Q1’, that often precede the label and duplicative fields were collapsed preserving the UID in a vector.  A vector database was constructed using these variable descriptive labels for embedding in retrieval augmented generation (RAG).
@@ -26,16 +26,16 @@ User provided data dictionaries were parsed into single variable labels, with va
 
 After Cohere reranking, variables names were re-extracted from the lookup table for the top 3 matches. Using a constructed prompt, top 3 variable name matches and the original variable label were provided to an LLM to suggest the best match for the original variable with an emphasis on using the suggested options. The LLM was also asked to provide the user instructions to align their variable with the variable selected.
 
-*Evaluation*
+### Evaluation
 Results from the Cohere re-ranking, each of top three selected, and LLM final output were evaluated by a human experienced in data alignment and harmonization. For each result, our judge rated the result into the following three categories.
 
-‘Success’ - Helpful for a data analyst in aligning a variable.
-‘Neutral’ - Ambiguous but may help to identify appropriate variables.
-‘Failure’ - No value or adverse in aligning with existing data.
+ - ‘Success’ - Helpful for a data analyst in aligning a variable.
+ - ‘Neutral’ - Ambiguous but may help to identify appropriate variables.
+ - ‘Failure’ - No value or adverse in aligning with existing data.
 
 ## Results
 
-**Model Performance**
+### Model Performance
 | llm_rank | count | percentages
 | -------- | ------- |  ------- |
 | Success | 61 | 59.22% |
@@ -56,7 +56,7 @@ Results from the Cohere re-ranking, each of top three selected, and LLM final ou
 
 Lots of successes, generally the frequency of success is considered good for LLM at the proof-of-concept stage.
 
-**Model Comparison**
+### Model Comparison
 
 | | |
 |:-------------------------:|:-------------------------:|
